@@ -2,8 +2,8 @@ const botao = document.querySelectorAll('.botao')
 
 var painel = document.querySelector('.resultado')
 
-console.log(botao[4].value)
 
+console.log(botao)
 
 for (let i = 0; i < botao.length; i++) {
     const element = botao[i];
@@ -12,3 +12,8 @@ for (let i = 0; i < botao.length; i++) {
         painel.innerHTML += botao[i].value
     })
 }
+
+botao[0].addEventListener('click', (e) => {
+    e.preventDefault()
+    painel.innerHTML = ''
+})
