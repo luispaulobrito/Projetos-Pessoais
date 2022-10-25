@@ -1,5 +1,15 @@
+:root{
+    /*Colors*/
+    --violet: rgb(186, 131, 236); 
+    --lightblue:  rgb(101, 101, 134);
+    --white: #fff;
+    --aliceblue: #aliceblue;
+    --black: rgba(0,0,0,0.774);
+    --darkblue: rgba(10, 5, 61, 0.774)
+}
+
 html{
-    background-color: rgb(186, 131, 236);
+    background-color: var(--violet);
 }
 .calculadora{
     display: flex;
@@ -10,12 +20,12 @@ html{
     min-height: 500px;
     margin: 30px auto;
     border-radius: 8px;
-    background-image: linear-gradient(45deg, rgba(0,0,0,0.774), rgba(10, 5, 61, 0.774));
+    background-image: linear-gradient(45deg, var(--black), var(--darkblue));
 }
 .calculadora .title h1{
     display: flex;
     justify-content: center;
-    color: white;
+    color: var(--white);
     padding-bottom: 15px;
 }
 .calculadora .painel-resultado{
@@ -29,18 +39,18 @@ html{
     padding-right: 10px;
     border-radius: 5px;
     height: 50px;
-    background-color: white;
+    background-color: var(--white);;
     font-size: 25px;
 }
 .calculadora .botoes{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    color: white;
+    color: var(--white);;
 }
 .calculadora .botoes button:hover{
-    background-color: rgb(101, 101, 134);
-    color: aliceblue;
+    background-color: var(--lightblue);
+    color: var(--aliceblue);;
     transition: 0.1s;
 }
 .calculadora .botoes button{

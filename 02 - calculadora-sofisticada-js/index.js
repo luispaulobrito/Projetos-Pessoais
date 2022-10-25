@@ -1,46 +1,49 @@
 const botao = document.querySelectorAll('.botao')
-const numeros = document.querySelectorAll('.numeros')
+const painel = document.querySelector('.resultado')
 const botaoIgual = document.querySelector('.botaoIgual')
-var painel = document.querySelector('.resultado')
+const botaoClear = document.querySelector('.botaoClear')
+const botaoBack = document.querySelector('.botaoBack')
 
-
-console.log(numeros)
-
-for (let i = 0; i < botao.length; i++) {
-    botao[i].addEventListener('click', (e) => {
-        e.preventDefault()
-        painel.innerHTML += botao[i].value
-    })
+function mostrarPainel() {
+    for (let i = 0; i < botao.length; i++) {
+        botao[i].addEventListener('click', (e) => {
+            e.preventDefault()
+            painel.innerHTML += botao[i].value
+        })
+    }
 }
+mostrarPainel()
 
 //botão clear
-botao[0].addEventListener('click', (e) => {
+botaoClear.addEventListener('click', (e) => {
     e.preventDefault()
-    painel.innerHTML = ''
+    limparTudo();
 })
 
 //botao back
-botao[1].addEventListener('click', (e) => {
-    var resultado = document.getElementsByClassName('.resultado')
+botaoBack.addEventListener('click', (e) => {
     e.preventDefault()
-    console.log(painel).value
-    painel.innerHTML = resultado.substring(0, resultado.length -1)
+    apagar();
 })
 
 //botao igual
 botaoIgual.addEventListener('click', (e) => {
     e.preventDefault()
-    // let resultado = document.getElementsByClassName('resultado').innerHTML;
-    console.log(painel)
-    var resultado = painel.innerText;
-    console.log(resultado)
-    painel.innerHTML = eval(resultado)
-
-    // painel.innerHTML = eval(painel) 
+    calcular();
 })
 
+function limparTudo() {
+    return painel.innerHTML = ''
+}
+
 function calcular() {
-    var resultado = document.getElementsByClassName('resultado').innerHTML;
-    console.log(resultado)  
+    var resultado = painel.innerText;
+    return painel.innerHTML = eval(resultado) 
+}
+
+function apagar() {
+    var resultado = painel.innerText;
+    painel.innerHTML = resultado.substring(0, resultado.length -1)
+    
 }
 
