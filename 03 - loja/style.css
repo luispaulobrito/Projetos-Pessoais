@@ -1,0 +1,63 @@
+:root{
+    /*Colors*/
+    --dark-green: rgb(0, 31, 32);
+    --white: aliceblue;
+}
+
+html{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--dark-green);
+}
+
+.boleto{
+    max-width: 360px;
+    min-height: 400px;
+    padding: 50px;
+    margin: 50px auto;
+    background-color: var(--white);
+    border-radius: 10px;
+}
+
+.boleto h1{
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 35px;
+}
+
+.boleto .form-group{
+    display: flex;
+    flex-direction: column;
+}
+
+.boleto .form-group .campo-boleto{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.boleto .form-group .botao-calcular{
+    padding: 9px;
+    border-radius: 7px;
+    margin: auto;
+}
+
+.boleto .form-group .botao-calcular:hover{
+    background-color: var(--dark-green);
+    color: var(--white);
+}
+
+.boleto .resultado{
+    margin-top: 20px;
+}
+.boleto .resultado div{
+    display: flex;
+    padding-top: 10px;
+    align-items: center;
+}
+.boleto .resultado div p{
+    padding-right: 10px;
+    justify-content: flex-end;
+    font-weight: 700;
+    font-size: 18px;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&family=Rubik&display=swap" rel="stylesheet">
+
+    <title>Loja</title>
+</head>
+<body>
+    <main class="boleto">
+        <h1>Geração de Carnê</h1>
+        
+        <form class="form-group" action="">
+            <div class="campo-boleto">
+                <label for="cliente">Cliente: </label>
+                <input type="text" name="cliente" id="cliente">
+            </div class="campo-boleto">
+            <div class="campo-boleto">
+                <label for="valor-da-compra">Total: </label>
+                <input type="number" name="valor-da-compra" id="valor-da-compra">
+            </div class="campo-boleto">
+            <div class="campo-boleto">
+                <label for="quantidade-de-parcelas">Número de parcelas: </label>
+                <select name="quantidade-de-parcelas" id="quantidade-de-parcelas">
+                    <option value="">Selecione</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+            </div class="campo-boleto">
+            <input class="botao-calcular" type="submit" value="Calcular">
+        </form>
+        <section class="resultado" id="resultado">
+            <div>
+                <p>Cliente:</p><span class="painel-cliente"></span>
+            </div>
+            <div>
+                <p>Total:</p><span class="painel-total"></span>
+            </div>
+            <div>
+                <p>Número de parcelas:</p><span class="painel-quantidade-de-parcelas"></span>
+            </div>
+            <div>
+                <p>Valor das parcelas:</p><span class="painel-valor-das-parcelas"></span>
+            </div>
+        </section>
+            <button class="gerarPdf">Gerar PDF</button>
+    </main>
+
+
+    <script src="index.js"></script>
+    
+</body>
+</html>
