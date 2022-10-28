@@ -14,6 +14,7 @@ botaoCalcular.addEventListener('click', (e) => {
     imprimirTotalDaCompra()
     imprimirQuantidadeDeParcelas()
     imprimirValorDeCadaParcela()
+    mostrarResultado()
 })
 
 botaoGerarPdf.addEventListener('click', (e) => {
@@ -50,4 +51,11 @@ function gerarPdf() {
     janela.document.write('</body></html>')
     janela.document.close();
     janela.print();
+}
+
+function mostrarResultado() {
+    const classeResultado = document.querySelector('.resultado');
+    const classeGerarPdf = document.querySelector('.gerarPdf');
+    classeResultado.className="resultado"
+    classeGerarPdf.className="gerarPdf"
 }

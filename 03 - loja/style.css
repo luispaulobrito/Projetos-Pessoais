@@ -61,3 +61,7 @@ html{
     font-weight: 700;
     font-size: 18px;
 }
+
+.boleto .display{
+    display: none;
+}
