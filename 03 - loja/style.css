@@ -1,6 +1,6 @@
 :root{
     /*Colors*/
-    --dark-green: rgb(0, 31, 32);
+    --dark-green: rgb(74, 150, 185);
     --white: aliceblue;
 }
 
@@ -64,4 +64,12 @@ html{
 
 .boleto .display{
     display: none;
+}
+
+.gerarPdf{
+    display: flex;
+    padding-top: 20px;
+    font-size: 30px;
+    color: var(--dark-green);
+    justify-content: flex-end;
 }
