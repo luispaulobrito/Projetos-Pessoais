@@ -1,13 +1,14 @@
 :root{
     /*Colors*/
-    --dark-green: rgb(74, 150, 185);
+    --light-blue: rgb(74, 150, 185);
+    --dark-blue: rgb(13, 79, 110);
     --white: aliceblue;
 }
 
 html{
     display: flex;
     flex-direction: column;
-    background-color: var(--dark-green);
+    background-color: var(--light-blue);
 }
 
 .boleto{
@@ -43,7 +44,7 @@ html{
 }
 
 .boleto .form-group .botao-calcular:hover{
-    background-color: var(--dark-green);
+    background-color: var(--light-blue);
     color: var(--white);
 }
 
@@ -70,6 +71,10 @@ html{
     display: flex;
     padding-top: 20px;
     font-size: 30px;
-    color: var(--dark-green);
+    color: var(--light-blue);
     justify-content: flex-end;
+}
+
+.gerarPdf:hover{
+    color: var(--dark-blue);
 }
