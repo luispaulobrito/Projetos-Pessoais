@@ -23,8 +23,7 @@
     padding: 50px;
     justify-content: space-around;
     grid-area: incentivo;
-    line-height: 55px;
-    font-size: 25px;
+    font-size: 20px;
 }
 .incentivo h2{
     color: var(--green);
@@ -70,49 +69,68 @@
     border: none;
 }
 
-.peso-abaixo,
-.peso-normal, 
-.peso-sobrepeso,
-.peso-obesidade,
-.peso-obesidade-grave,
-.peso-obesidade-super-grave{
+.painel{
     display: flex;
     flex-direction: column;
     background-color: var(--description);
     padding: 50px;
-    justify-content: space-around;
+    justify-content: space-between;
     grid-area: incentivo;
 }
 
-.peso-abaixo h2,
-.peso-normal h2, 
-.peso-sobrepeso h2,
-.peso-obesidade h2,
-.peso-obesidade-grave h2,
-.peso-obesidade-super-grave h2{
+.painel h2{
     color: var(--green);
     margin: 10px 0;
     font-size: 25px;
     font-weight: 100;
 }
-.peso-abaixo .resultado-peso,
-.peso-normal .resultado-peso, 
-.peso-sobrepeso .resultado-peso,
-.peso-obesidade .resultado-peso,
-.peso-obesidade-grave .resultado-peso,
-.peso-obesidade-super-grave .resultado-peso{
+.painel .resultado-peso{
     font-weight: 700;
 }
-.peso-abaixo p,
-.peso-normal p, 
-.peso-sobrepeso p,
-.peso-obesidade p,
-.peso-obesidade-grave p,
-.peso-obesidade-super-grave p{
+.painel p{
     font-size: 12px;
     line-height: 25px;
 }
 
 .display{
     display: none;
+}
+
+@media (max-width: 700px) {
+    .imc{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .incentivo{
+        padding: 30px;
+        font-size: 20px;
+    }
+
+    .calcular{
+        padding: 30px;
+        justify-content:space-around;
+        font-size: 25px;
+    }
+    
+    .calcular p{
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 18px;
+    }
+
+    .calcular .text input{
+        width: 90px;
+        height: 35px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .calcular .botao input{
+        width: 90px;
+        font-size: small;
+    }
+    .painel{
+        padding: 30px;
+    }
 }

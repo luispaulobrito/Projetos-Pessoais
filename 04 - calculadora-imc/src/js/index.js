@@ -23,7 +23,7 @@ function calcularIMC() {
 
 function imprimirImc() {
     let resultadoImc = calcularIMC();
-    if (resultadoImc < 18) {
+    if (resultadoImc < 18) {        
         return painelIimc[0].innerHTML = resultadoImc;
     } else if (resultadoImc >=18 && resultadoImc < 25) {
         return painelIimc[1].innerHTML = resultadoImc;
