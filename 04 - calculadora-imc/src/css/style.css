@@ -73,7 +73,7 @@
     display: flex;
     flex-direction: column;
     background-color: var(--description);
-    padding: 50px;
+    padding: 30px;
     justify-content: space-between;
     grid-area: incentivo;
 }
