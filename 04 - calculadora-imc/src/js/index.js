@@ -25,17 +25,20 @@ function mostrarPainel() {
     }
 }
 
+async function conectarApi() {
+  const response = await fetch('https://my-json-server.typicode.com/luispaulobrito/fake-api/paineis')
+  return await response.json() 
+}    
+    
 function mostrarResultadoNoPainel() {
-  fetch('https://my-json-server.typicode.com/luispaulobrito/fake-api/paineis')
-  .then(response => response.json())
-  .then(json => { 
+  conectarApi().then(jsonData => {
     let calculoImc = calcularIMC();
-    for (let key in json) {
-      const cadaIMC = json[key].IMC;
+    for (let key in jsonData) {
+      const cadaIMC = jsonData[key].IMC;
       if (calculoImc <= cadaIMC) {
-        nivel.innerText = json[key].nivel;
-        tipo.innerHTML = json[key].tipo;
-        descricao.innerHTML = json[key].descricao;
+        nivel.innerText = jsonData[key].nivel;
+        tipo.innerHTML = jsonData[key].tipo;
+        descricao.innerHTML = jsonData[key].descricao;
         imcResultado.innerHTML = calculoImc;
         break;
       }
