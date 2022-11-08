@@ -7,9 +7,27 @@ const nivel = document.querySelector('.nivel')
 const tipo = document.querySelector('.tipo')
 const descricao = document.querySelector('.descricao')
  
-document.getElementById('calcular').addEventListener('click', (e) => {
+document.getElementById('calcular').addEventListener('click', () => {
     mostrarPainel()
     mostrarResultadoNoPainel()
+})
+
+document.getElementById('altura').addEventListener('keyup', (e) => {
+  const key = e.which || e.keyCode
+  const isEnterKeyPressed = key === 13
+  if (isEnterKeyPressed) {
+      mostrarPainel()
+      mostrarResultadoNoPainel()
+    }
+})
+
+document.getElementById('peso').addEventListener('keyup', (e) => {
+  const key = e.which || e.keyCode
+  const isEnterKeyPressed = key === 13
+  if (isEnterKeyPressed) {
+      mostrarPainel()
+      mostrarResultadoNoPainel()
+    }
 })
 
 function calcularIMC() {
