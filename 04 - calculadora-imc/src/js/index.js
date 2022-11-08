@@ -1,6 +1,5 @@
 const altura = document.getElementById('altura')
 const peso = document.getElementById('peso')
-const calcular = document.getElementById('calcular')
 const classeIncentivo = document.querySelector('.incentivo')
 const painel = document.querySelector('.painel')
 const imcResultado = document.querySelector('.imc-resultado')
@@ -8,7 +7,7 @@ const nivel = document.querySelector('.nivel')
 const tipo = document.querySelector('.tipo')
 const descricao = document.querySelector('.descricao')
  
-calcular.addEventListener('click', (e) => {
+document.getElementById('calcular').addEventListener('click', (e) => {
     mostrarPainel()
     mostrarResultadoNoPainel()
 })

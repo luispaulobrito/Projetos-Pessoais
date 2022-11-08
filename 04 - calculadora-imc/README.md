@@ -6,7 +6,7 @@ https://calculadoraimclp.netlify.app/
 
 Claculadora IMC é uma aplicação web e mobile construída para apresentar a avaliação do imc de uma pessoa de acordo com os dados fornecidos.
 
-Nesse projeto foi aprendido: como estruturar um layout utilizando HTML, CSS e JavaScript. No CSS foi utilizado Flex e Grid e o JavaScript foi utlizado para executar calcular o imc e apresentar o resultado.
+Nesse projeto foi aprendido: como estruturar um layout utilizando HTML, CSS e JavaScript. No CSS foi utilizado Flex e Grid e o JavaScript foi utlizado para calcular o imc, buscar dados em uma API e apresentar o resultado.
 
 ## Layout mobile
 ![Mobile 1](https://github.com/luispaulobrito/Frontend-Mentor/blob/main/assets/imc-2.png)
