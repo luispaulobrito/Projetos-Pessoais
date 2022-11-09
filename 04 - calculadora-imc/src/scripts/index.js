@@ -1,3 +1,5 @@
+import { acessarApi } from '/src/scripts/services/acessar-api.js'
+
 const altura = document.getElementById('altura')
 const peso = document.getElementById('peso')
 const classeIncentivo = document.querySelector('.incentivo')
@@ -40,15 +42,10 @@ function mostrarPainel() {
         classeIncentivo.classList.add("display")
         painel.classList.remove("display")
     }
-}
-
-async function conectarApi() {
-  const response = await fetch('https://my-json-server.typicode.com/luispaulobrito/fake-api/paineis')
-  return await response.json() 
-}    
+}   
     
 function mostrarResultadoNoPainel() {
-  conectarApi().then(jsonData => {
+  acessarApi().then(jsonData => {
     let calculoImc = calcularIMC();
     for (let key in jsonData) {
       const cadaIMC = jsonData[key].IMC;
