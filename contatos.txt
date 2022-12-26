@@ -1,0 +1,12 @@
+Claro! Aqui está um modelo relacional para o aplicativo de gerenciamento de contatos que mencionei como a segunda ideia:
+
+CONTATO (ID_CONTATO, NOME, EMAIL, TELEFONE)
+
+O modelo relacional consiste em uma única tabela chamada CONTATO, que armazena informações sobre cada contato. A tabela tem quatro colunas:
+
+ID_CONTATO: uma chave primária que identifica cada contato de maneira única.
+NOME: o nome do contato.
+EMAIL: o endereço de email do contato.
+TELEFONE: o número de telefone do contato.
+
+Esse é um modelo básico e simples, mas você pode adicionar outras colunas, como endereço, data de nascimento e outras informações relevantes, conforme a necessidade do seu aplicativo.

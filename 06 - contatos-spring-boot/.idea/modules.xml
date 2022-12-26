@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/06 - contatos-spring-boot.iml" filepath="$PROJECT_DIR$/.idea/06 - contatos-spring-boot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/contatos/contatos.iml" filepath="$PROJECT_DIR$/contatos/contatos.iml" />
+    </modules>
+  </component>
+</project>
