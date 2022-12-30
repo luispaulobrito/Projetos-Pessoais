@@ -26,7 +26,7 @@ public class Contato {
     @Column
     private String endereco;
 
-    @Column(name = "data_cadastro")
+    @Column(name = "data_cadastro", updatable = false)
     @JsonFormat(pattern = "dd/MM/yyyy")
     private LocalDate dataCadastro;
 
