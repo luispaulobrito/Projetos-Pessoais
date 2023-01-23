@@ -1,10 +1,10 @@
-# Claculadora
+# Calculadora
 
 # Sobre o projeto
 
 https://calculadoralp.netlify.app/
 
-Claculadora é uma aplicação web e mobile construída para representar uma calculadora online.
+Calculadora é uma aplicação web e mobile construída para representar uma calculadora online.
 
 Nesse projeto foi aprendido: como estruturar um layout utilizando HTML, CSS e JavaScript. No CSS foi utilizado Flex e o JavaScript foi utlizado para executar as funções dos botões e realizar os cálculos aritméticos.
 
