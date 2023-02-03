@@ -1,0 +1,46 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+}
+
+img{
+  max-width: 100%;
+}
+
+.toolbar{
+  background-color:rgb(57 2 88);
+}
+
+.toolbar span{
+  color: rgb(253 251 251);
+}
+
+.sidenav{
+  background-color: rgb(118 118 159);
+  width: 200px;
+  padding: 25px;
+}
+.sidenav ul li {
+  margin: 10px;
+}
+.sidenav ul li a{
+  color: rgb(253 251 251);
+}
+
+.main{
+  background-color: rgb(255, 255, 255);
+  width: auto;
+  height: 500px;
+  padding: 5px;
+}
