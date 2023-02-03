@@ -58,6 +58,7 @@ public class ContatoController {
                     contato.setNome(contatoAtualizado.getNome());
                     contato.setTelefone(contatoAtualizado.getTelefone());
                     contato.setEndereco(contatoAtualizado.getEndereco());
+                    contato.setContatoEmergencia(contatoAtualizado.getContatoEmergencia());
                     return repository.save(contato);
                 })
                 .orElseThrow( () -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Cliente não encontrado"));

@@ -16,15 +16,19 @@ public class Contato {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
+
     @Column(nullable = false, length = 150)
-
     private String nome;
+
     @Column(nullable = false, length = 11)
-
     private String telefone;
-    @Column
 
+    @Column
     private String endereco;
+
+    @Column
+    private Boolean contatoEmergencia;
+
     @Column(name = "data_cadastro", updatable = false)
     @JsonFormat(pattern = "dd/MM/yyyy")
     private LocalDate dataCadastro;
