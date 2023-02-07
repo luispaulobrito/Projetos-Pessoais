@@ -1,9 +1,6 @@
-<mat-toolbar class="toolbar">
-    <span>Agenda</span>
-</mat-toolbar>
-
 <mat-drawer-container class="example-container">
   <mat-drawer class="sidenav" mode="side" opened>
+    <span>Agenda</span>
     <ul>
       <li><a href="#">Cadastrar Contato</a></li>
       <li><a href="#">Lista de Contatos</a></li>
@@ -11,10 +8,14 @@
   </mat-drawer>
 
   <mat-drawer-content class="main">
-    Main content
+    <div>
+      <router-outlet></router-outlet>
+    </div>
+
+
+    <footer>
+      <p>Desenvolvido por Luis Paulo Brito</p>
+    </footer>
   </mat-drawer-content>
 </mat-drawer-container>
 
-<footer>
-  <p>Desenvolvido por Luis Paulo Brito</p>
-</footer>

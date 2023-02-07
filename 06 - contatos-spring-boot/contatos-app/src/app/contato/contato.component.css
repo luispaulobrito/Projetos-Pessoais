@@ -18,29 +18,42 @@ img{
   max-width: 100%;
 }
 
-.toolbar{
-  background-color:rgb(57 2 88);
-}
-
-.toolbar span{
-  color: rgb(253 251 251);
-}
-
 .sidenav{
-  background-color: rgb(118 118 159);
+  background-color: #292929;
   width: 200px;
-  padding: 25px;
+  padding-top: 25px;
 }
-.sidenav ul li {
-  margin: 10px;
+
+.sidenav span{
+  color: #ffff;
+  font-size: 30px;
+  padding-left: 20px;
+  padding-bottom: 20px;
 }
+
+.sidenav ul{
+  margin-top: 35px;
+}
+
+.sidenav ul li{
+  margin-top: 25px;
+}
+
 .sidenav ul li a{
   color: rgb(253 251 251);
+  text-transform: uppercase;
+  font-size: smaller;
+  padding-left: 20px ;
+}
+.sidenav ul li a:hover{
+  color: #347b3e;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .main{
   background-color: rgb(255, 255, 255);
   width: auto;
-  height: 500px;
+  height: 630px;
   padding: 5px;
 }
